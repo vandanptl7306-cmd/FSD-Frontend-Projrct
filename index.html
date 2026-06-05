@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title >JoyeSpoon - Discover Our Unique Mouth Fresheners </title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Login CSS -->
+  <link rel="stylesheet" href="login.css" />
+
+  <style>
+    /* Dropdown Menu Styles */
+    .dropdown-mega {
+      position: relative;
+    }
+
+    .dropdown-mega-menu {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #f8f5f0;
+      min-width: 280px;
+      padding: 25px 30px;
+      border-radius: 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      z-index: 1000;
+      margin-top: 0;
+    }
+
+    .dropdown-mega:hover .dropdown-mega-menu {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .dropdown-mega-menu h6 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .dropdown-mega-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .dropdown-mega-menu ul li {
+      margin-bottom: 12px;
+    }
+
+    .dropdown-mega-menu ul li a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #333;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      padding: 8px 0;
+      transition: all 0.2s ease;
+    }
+
+    .dropdown-mega-menu ul li a:hover {
+      color: #c97a5c;
+      padding-left: 5px;
+    }
+
+    .dropdown-mega-menu ul li a i {
+      font-size: 12px;
+      color: #999;
+    }
+
+    /* Top Banner styling */
+    .top-banner {
+      background: linear-gradient(135deg, #c85a3f 0%, #d16b52 100%);
+      color: rgb(87, 85, 85);
+      padding: 10px 0;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    /* Navbar styling */
+    .navbar {
+      background: #f8f5f0 !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+     .navbar1 {
+      background: #192d5f !important;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .nav-link {
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0.8px;
+      color: #333;
+      padding: 8px 16px !important;
+    }
+
+    .nav-link:hover {
+      color: #c97a5c !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top Banner -->
+  <div class="top-banner">
+    <p class="mb-0">10% off on MRP + 5% Off on Checkout with code SHARKJOY above Rs 499 + FREE SHIPPING above Rs 499 | Get FREE GIFTS on checkout</p>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <span class="brand-text"><img src="joyspoonicon.avif"></span>
+      </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="searchIcon"><i class="fas fa-search"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html"><i class="fas fa-user"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar1 navbar-expand-lg navbar-light sticky-top" style="background-color: #1b2247;">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">As Seen on Shark Tank</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html?category=deals">Deal Corner</a>
+          </li>
+          
+          <!-- Dropdown Menu for All Mukhwas -->
+          <li class="nav-item dropdown-mega">
+            <a class="nav-link" href="products.html" style="position: relative;">
+              All Mukhwas
+            </a>
+            <div class="dropdown-mega-menu">
+              <h6>All Mukhwas</h6>
+              <ul>
+                <li>
+                  <a href="products.html?category=premium">
+                    Premium Mukhwas
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="products.html?category=trail-mixes">
+                    Trail Mixes
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="products.html?category=heritage">
+                    Heritage Blends
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="products.html?category=kids">
+                    Kids Special
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="products.html?category=gut-friendly">
+                    Gut Friendly
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="products.html?category=everyday">
+                    Everyday Essentials
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="products.html?category=gifting">
+                    Gifting
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="products.html?category=assorted">
+                    Assorted Box
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="products.html?category=new">
+                    New Arrivals
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Bulk Orders</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html?category=wedding">Wedding Special</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Our Story</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blogs">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#festive">Festive Hamper</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+  </nav>
+
+
+
+  <!-- Hero Carousel Section -->
+  <section class="hero-carousel-section" id="home">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <!-- Slide 1 - Festive Hamper -->
+        <div class="carousel-item active">
+          <div class="hero-slide">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6">
+                  <div class="hero-content">
+                    <h1 class="hero-slide-title">
+                      EVERY HAMPER DONATED,<br />A GREATER JOY SHARED
+                    </h1>
+                    <p class="hero-slide-subtitle">
+                      Join us in spreading happiness this festive season
+                    </p>
+                    <button class="btn btn-hero-slide">SHARE JOY</button>
+                    <div class="donation-progress mt-4">
+                      <div class="progress-stats">
+                        <span class="progress-number">111</span>
+                        <span class="progress-separator">/</span>
+                        <span class="progress-total">1000</span>
+                      </div>
+                      <p class="progress-label">BOXES DONATED</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="hero-image">
+                    <img src="img12.webp" alt="Festive Celebration" class="img-fluid" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 - Premium Collection -->
+        <div class="carousel-item">
+          <div class="hero-slide hero-slide-2">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6">
+                  <div class="hero-content">
+                    <h1 class="hero-title">JoyeSpoon</h1>
+                    <h2 class="hero-subtitle">
+                      DISCOVER OUR UNIQUE<br />MOUTH FRESHENERS!
+                    </h2>
+                    <div class="hero-social">
+                      <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                      <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <button class="btn btn-hero">EXPLORE NOW</button>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?w=800&h=600&fit=crop"
+                      alt="Team" class="img-fluid" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 - Special Offers -->
+        <div class="carousel-item">
+          <div class="hero-slide hero-slide-3">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-6">
+                  <div class="hero-content">
+                    <h1 class="hero-title">SPECIAL OFFERS</h1>
+                    <h2 class="hero-subtitle">
+                      GET UP TO 25% OFF<br />ON ALL COMBOS!
+                    </h2>
+                    <p class="hero-description">
+                      Limited time offer on our premium mukhwas collection
+                    </p>
+                    <button class="btn btn-hero">SHOP NOW</button>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1607083206325-caf1edba7a0f?w=800&h=600&fit=crop"
+                      alt="Special Offers" class="img-fluid" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Joyful Combos Section -->
+  <section class="combos-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">
+        INDULGE IN OUR JOYFUL COMBOS
+      </h2>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="product-card">
+            <div class="product-image">
+              <!-- Original image (visible by default) -->
+              <img src="i1.png" alt="COMBO MUKHWAS #1" class="product-img-main" />
+              <!-- Hover image (hidden by default) - REPLACE "hover-i2.png" with your hover image path -->
+              <img src="i2.webp" alt="COMBO MUKHWAS #1 Hover" class="product-img-hover" />
+            </div>
+            <div class="product-info">
+              <h5>COMBO MUKHWAS #1</h5>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(150)</span>
+              </div>
+              <p class="price">₹299 <span class="old-price">₹399</span></p>
+              <button class="btn btn-add-cart">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="product-card">
+            <div class="product-image">
+              <!-- Original image (visible by default) -->
+              <img src="i3.png" alt="COMBO MUKHWAS #2" class="product-img-main" />
+              <!-- Hover image (hidden by default) - REPLACE "hover-i2.png" with your hover image path -->
+              <img src="i4.webp" alt="COMBO MUKHWAS #2 Hover" class="product-img-hover" />
+            </div>
+            <div class="product-info">
+              <h5>COMBO MUKHWAS #2</h5>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(200)</span>
+              </div>
+              <p class="price">₹349 <span class="old-price">₹449</span></p>
+              <button class="btn btn-add-cart">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="product-card">
+            <div class="product-image">
+              <!-- Original image (visible by default) -->
+              <img src="i5.png" alt="COMBO MUKHWAS #3" class="product-img-main" />
+              <!-- Hover image (hidden by default) - REPLACE "hover-i2.png" with your hover image path -->
+              <img src="i6.webp" alt="COMBO MUKHWAS #3 Hover" class="product-img-hover" />
+            </div>
+          </div>
+          <div class="product-info">
+            <h5>COMBO MUKHWAS #3</h5>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span>(180)</span>
+            </div>
+            <p class="price">₹399 <span class="old-price">₹499</span></p>
+            <button class="btn btn-add-cart">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="product-card">
+            <div class="product-image">
+              <!-- Original image (visible by default) -->
+              <img src="i7.png" alt="COMBO MUKHWAS #4" class="product-img-main" />
+              <!-- Hover image (hidden by default) - REPLACE "hover-i2.png" with your hover image path -->
+              <img src="i8.webp" alt="COMBO MUKHWAS #4 Hover" class="product-img-hover" />
+              <div class="product-badge sale">SALE</div>
+            </div>
+            <div class="product-info">
+              <h5>COMBO MUKHWAS #4</h5>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(220)</span>
+              </div>
+              <p class="price">₹279 <span class="old-price">₹379</span></p>
+              <button class="btn btn-add-cart">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Premium Collections -->
+  <section class="premium-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">
+        DIVE INTO OUR PREMIUM COLLECTIONS
+      </h2>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="collection-card deals-corner">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="collection-card premium-mukhwas">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="collection-card gift-friendly">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-content text-center">
+        <p class="newsletter-text">
+          Join our mailing list and get 20% off your first order. Receive
+          updates on latest products and special offers.
+        </p>
+        <button class="btn btn-newsletter" onclick="window.location.href='signup.html'">
+          SIGN UP
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Selling Products -->
+  <section class="best-selling-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">
+        DISCOVER OUR BEST SELLING DELIGHTS
+      </h2>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="product-card">
+            <div class="product-image green-bg">
+              <!-- Original image (visible by default) -->
+              <img src="i12.png" alt="COMBO MUKHWAS #5" class="product-img-main" />
+              <!-- Hover image (hidden by default) - REPLACE "hover-i2.png" with your hover image path -->
+              <img src="i13.webp" alt="COMBO MUKHWAS #5 Hover" class="product-img-hover" />
+            </div>
+            <div class="product-info">
+              <h5>CLASSIC MUKHWAS</h5>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(250)</span>
+              </div>
+              <p class="price">₹199</p>
+              <button class="btn btn-add-cart">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="product-card">
+            <div class="product-image orange-bg">
+              <!-- Original image (visible by default) -->
+              <img src="i14.png" alt="COMBO MUKHWAS #6" class="product-img-main" />
+              <!-- Hover image (hidden by default) - REPLACE "hover-i2.png" with your hover image path -->
+              <img src="i15.webp" alt="COMBO MUKHWAS #6 Hover" class="product-img-hover" />
+
+            </div>
+            <div class="product-info">
+              <h5>MUKHWAS CANDY PACK - MINI SET</h5>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(300)</span>
+              </div>
+              <p class="price">₹249</p>
+              <button class="btn btn-add-cart">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="product-card">
+            <div class="product-image blue-bg">
+              <!-- Original image (visible by default) -->
+              <img src="i16.png" alt="COMBO MUKHWAS #7" class="product-img-main" />
+              <!-- Hover image (hidden by default) - REPLACE "hover-i2.png" with your hover image path -->
+              <img src="i17.webp" alt="COMBO MUKHWAS #7 Hover" class="product-img-hover" />
+
+            </div>
+            <div class="product-info">
+              <h5>PREMIUM BOTTLE</h5>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(180)</span>
+              </div>
+              <p class="price">₹299</p>
+              <button class="btn btn-add-cart">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="product-card">
+            <div class="product-image orange-bg">
+              <!-- Original image (visible by default) -->
+              <img src="i18.png" alt="COMBO MUKHWAS #8" class="product-img-main" />
+              <!-- Hover image (hidden by default) - REPLACE "hover-i2.png" with your hover image path -->
+              <img src="i19.webp" alt="COMBO MUKHWAS #8 Hover" class="product-img-hover" />
+            </div>
+            <div class="product-info">
+              <h5>DELUXE MUKHWAS</h5>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(190)</span>
+              </div>
+              <p class="price">₹349</p>
+              <button class="btn btn-add-cart">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shark Tank Section -->
+  <section class="shark-tank-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="shark-tank-image">
+            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop" alt="Shark Tank"
+              class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="shark-tank-content">
+            <h2 class="shark-tank-title">
+              DISCOVER THE<br />JOYESPOON STORY -<br />WHERE QUALITY MEETS
+              TASTE!
+            </h2>
+            <button class="btn btn-shark-tank">LEARN MORE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gifting Section -->
+  <section class="gifting-section py-5" id="shop">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">GIFTING MADE EASY</h2>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="product-card">
+            <div class="product-image orange-bg">
+              <!-- Original image (visible by default) -->
+              <img src="i20.png" alt="COMBO MUKHWAS #9" class="product-img-main" />
+              <!-- Hover image (hidden by default) - REPLACE "hover-i2.png" with your hover image path -->
+              <img src="i21.webp" alt="COMBO MUKHWAS #9 Hover" class="product-img-hover" />
+            </div>
+            <div class="product-info">
+              <h5>GIFT PACK 1</h5>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="price">₹599</p>
+              <button class="btn btn-add-cart">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="product-card">
+            <div class="product-image orange-bg">
+              <!-- Original image (visible by default) -->
+              <img src="i22.png" alt="COMBO MUKHWAS #10" class="product-img-main" />
+              <!-- Hover image (hidden by default) - REPLACE "hover-i2.png" with your hover image path -->
+              <img src="i23.webp" alt="COMBO MUKHWAS #10 Hover" class="product-img-hover" />
+            </div>
+            <div class="product-info">
+              <h5>PREMIUM GIFT BOX</h5>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="price">₹799</p>
+              <button class="btn btn-add-cart">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="product-card">
+            <div class="product-image orange-bg">
+              <!-- Original image (visible by default) -->
+              <img src="i24.png" alt="COMBO MUKHWAS #11" class="product-img-main" />
+              <!-- Hover image (hidden by default) - REPLACE "hover-i2.png" with your hover image path -->
+              <img src="i25.png" alt="COMBO MUKHWAS #11 Hover" class="product-img-hover" />
+            </div>
+            <div class="product-info">
+              <h5>DELUXE GIFT SET</h5>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="price">₹999</p>
+              <button class="btn btn-add-cart">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="product-card">
+            <div class="product-image orange-bg">
+              <!-- Original image (visible by default) -->
+              <img src="i26.png" alt="COMBO MUKHWAS #12" class="product-img-main" />
+              <!-- Hover image (hidden by default) - REPLACE "hover-i2.png" with your hover image path -->
+              <img src="i27.jpg" alt="COMBO MUKHWAS #12 Hover" class="product-img-hover" />
+            </div>
+            <div class="product-info">
+              <h5>FESTIVE PACK</h5>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="price">₹1299</p>
+              <button class="btn btn-add-cart">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ingredients Section -->
+  <section class="ingredients-section" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="ingredients-image">
+            <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?w=600&h=600&fit=crop"
+              alt="Ingredients" class="img-fluid rounded-circle" />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="ingredients-content">
+            <h2 class="ingredients-title">JOYFUL NOW, JOYFUL LONG TERM!</h2>
+            <p class="ingredients-text">
+              We believe that the ingredients that are a part of our food do
+              not only please our taste buds but also keep us healthy and
+              joyful all day long.
+            </p>
+            <div class="row mt-5">
+              <div class="col-md-4 text-center">
+                <div class="ingredient-icon">
+                  <i class="fas fa-leaf"></i>
+                </div>
+                <h5>100% Natural</h5>
+              </div>
+              <div class="col-md-4 text-center">
+                <div class="ingredient-icon">
+                  <i class="fas fa-certificate"></i>
+                </div>
+                <h5>Premium Quality</h5>
+              </div>
+              <div class="col-md-4 text-center">
+                <div class="ingredient-icon">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <h5>Healthy Choice</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">
+        LET CUSTOMERS SPEAK FOR US
+      </h2>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-card">
+            <div class="rating mb-3">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              "Amazing taste and quality! Best mouth fresheners I've ever
+              tried. The packaging is also very premium."
+            </p>
+            <h6>- Priya Sharma</h6>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-card">
+            <div class="rating mb-3">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              "Perfect for gifting! Everyone loved the combo packs. The
+              quality is exceptional and delivery was quick."
+            </p>
+            <h6>- Rahul Kumar</h6>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonial-card">
+            <div class="rating mb-3">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              "Highly recommended! The mukhwas is so fresh and flavorful. Will
+              definitely order again for festive season."
+            </p>
+            <h6>- Anjali Patel</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Find Joy Everywhere Section -->
+  <section class="find-joy-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">FIND JOY EVERYWHERE</h2>
+      <div class="platform-logos">
+        <div class="row justify-content-center align-items-center g-4">
+          <div class="col-lg-2 col-md-3 col-6 text-center">
+            <img src="zepto.avif" alt="Zepto" class="platform-logo" />
+          </div>
+          <div class="col-lg-2 col-md-3 col-6 text-center">
+            <img src="swiggy.avif" alt="Swiggy" class="platform-logo" />
+          </div>
+          <div class="col-lg-2 col-md-3 col-6 text-center">
+            <img src="flipkart.avif" alt="Flipkart" class="platform-logo" />
+          </div>
+          <div class="col-lg-2 col-md-3 col-6 text-center">
+            <img src="amazon.avif" alt="Amazon" class="platform-logo" />
+          </div>
+          <div class="col-lg-2 col-md-3 col-6 text-center">
+            <img src="bb.avif" alt="Blinkit" class="platform-logo" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Store Locations Section -->
+  <section class="store-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">FIND US OFFLINE</h2>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="store-card">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=500&h=300&fit=crop" alt="Store"
+              class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="store-card">
+            <div class="store-info-card">
+              <h4>SHOPPING ARCADE STORES</h4>
+              <p>
+                Find us at premium shopping malls and retail stores across
+                major cities.
+              </p>
+              <ul class="store-list">
+                <li>📍 Select City Walk, Delhi</li>
+                <li>📍 Phoenix Market City, Mumbai</li>
+                <li>📍 Inorbit Mall, Bangalore</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="store-card">
+            <img src="https://images.unsplash.com/photo-1601924994915-09a0e873e3d2?w=500&h=300&fit=crop" alt="Store"
+              class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Press Section -->
+  <section class="press-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">BUZZ AROUND JOYSPOON</h2>
+      <div class="press-logos">
+        <div class="row justify-content-center align-items-center g-4">
+          <div class="col-lg-2 col-md-3 col-6 text-center">
+            <div class="press-badge">LIVE</div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-6 text-center">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/YouTube_Logo.svg/200px-YouTube_Logo.svg.png"
+              alt="YouTube" class="press-logo" />
+          </div>
+          <div class="col-lg-2 col-md-3 col-6 text-center">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Instagram_logo.svg/200px-Instagram_logo.svg.png"
+              alt="Instagram" class="press-logo" />
+          </div>
+          <div class="col-lg-2 col-md-3 col-6 text-center">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/200px-Twitter-logo.svg.png"
+              alt="Twitter" class="press-logo" />
+          </div>
+          <div class="col-lg-2 col-md-3 col-6 text-center">
+            <div class="press-badge">NEWS</div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-6 text-center">
+            <div class="press-badge">MEDIA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/7801820504" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">JOYESPOON</h5>
+          <p>
+            Discover the joy of authentic Indian mouth fresheners crafted with
+            premium ingredients.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">QUICK LINKS</h5>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">CUSTOMER CARE</h5>
+          <ul class="footer-links">
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">CONTACT US</h5>
+          <ul class="footer-contact">
+            <li>
+              <i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra, India
+            </li>
+            <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+            <li><i class="fas fa-envelope"></i> info@joyespoon.com</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 JoyeSpoon. All Rights Reserved. | Designed with ❤️ in
+          India
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top" id="scrollTop">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Shopping Cart Drawer -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <div class="cart-title">
+        <i class="fas fa-shopping-cart"></i>
+        <span>Your cart · <span id="cartItemCount">0</span> items</span>
+      </div>
+      <button class="cart-close" id="cartClose">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <div class="cart-body">
+      <!-- One-time Offer -->
+      <!-- <div class="cart-offer">
+          <h6>One-time offer—free Gift on your order!</h6>
+          <div class="offer-progress">
+            <div class="offer-milestone">
+              <div class="milestone-bar">
+                <div class="milestone-progress" style="width: 60%"></div>
+              </div>
+              <div class="milestone-labels">
+                <span class="milestone-price">₹799</span>
+                <span class="milestone-price">₹1299</span>
+              </div>
+              <div class="milestone-gifts">
+                <div class="gift-item">
+                  <div class="gift-icon">
+                    <i class="fas fa-gift"></i>
+                  </div>
+                  <span
+                    ><i
+                      class="fas fa-leaf"
+                      style="color: #4caf50; margin-right: 5px"
+                    ></i
+                    >Free Mukhwas</span
+                  >
+                </div>
+                <div class="gift-item">
+                  <div class="gift-icon">
+                    <i class="fas fa-gift"></i>
+                  </div>
+                  <span
+                    ><i
+                      class="fas fa-candy-cane"
+                      style="color: #d2691e; margin-right: 5px"
+                    ></i
+                    >Free Jaggery</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+      <!-- Cart Items -->
+      <div class="cart-items" id="cartItems">
+        <!-- Cart items will be dynamically generated here -->
+        <div class="empty-cart" style="text-align: center; padding: 40px 20px">
+          <i class="fas fa-shopping-cart" style="font-size: 48px; color: #ccc; margin-bottom: 15px"></i>
+          <p style="color: #999">Your cart is empty</p>
+        </div>
+      </div>
+
+      <!-- Offers & Rewards -->
+      <div class="cart-offers">
+        <h6>Offers & Rewards</h6>
+        <div class="coupon-input">
+          <i class="fas fa-tag"></i>
+          <input type="text" placeholder="Enter coupon code" id="couponCode" />
+          <button class="btn-apply-coupon" id="applyCoupon">Apply</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span class="total-label">₹0</span>
+        <a href="#" class="estimated-link">Estimated total</a>
+      </div>
+      <button class="btn-checkout">Checkout</button>
+    </div>
+  </div>
+
+  <!-- Search Drawer -->
+  <div class="search-overlay" id="searchOverlay"></div>
+  <div class="search-drawer" id="searchDrawer">
+    <div class="search-header">
+      <div class="search-input-container">
+        <i class="fas fa-search search-input-icon"></i>
+        <input type="text" class="search-input" placeholder="What are you looking for?" id="searchInput" />
+        <button class="search-close" id="searchClose">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="search-body">
+      <h3 class="search-section-title">Top Categories</h3>
+      <div class="categories-grid">
+        <!-- Category 1: Bestselling Mukhwas -->
+        <a href="products.html" class="category-card">
+          <div class="category-image category-green">
+            <img src="https://images.unsplash.com/photo-1599490659213-e2b9527bd087?w=400&h=400&fit=crop"
+              alt="Bestselling Mukhwas" />
+          </div>
+          <h5 class="category-title">Bestselling Mukhwas</h5>
+        </a>
+
+        <!-- Category 2: Combo Mukhwas Bottles -->
+        <a href="products.html" class="category-card">
+          <div class="category-image category-brown">
+            <img src="https://images.unsplash.com/photo-1587334206074-7f83b125d098?w=400&h=400&fit=crop"
+              alt="Combo Mukhwas Bottles" />
+          </div>
+          <h5 class="category-title">Combo Mukhwas Bottles</h5>
+        </a>
+
+        <!-- Category 3: Premium Mukhwas -->
+        <a href="products.html" class="category-card">
+          <div class="category-image category-pink">
+            <img src="https://images.unsplash.com/photo-1608797178974-15b35a9686e8?w=400&h=400&fit=crop"
+              alt="Premium Mukhwas" />
+          </div>
+          <h5 class="category-title">Premium Mukhwas</h5>
+        </a>
+
+        <!-- Category 4: Deal Corner -->
+        <a href="products.html" class="category-card">
+          <div class="category-image category-orange">
+            <img src="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?w=400&h=400&fit=crop"
+              alt="Deal Corner" />
+          </div>
+          <h5 class="category-title">Deal Corner</h5>
+        </a>
+
+        <!-- Category 5: Gift Hampers -->
+        <a href="products.html" class="category-card">
+          <div class="category-image category-beige">
+            <img src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=400&h=400&fit=crop"
+              alt="Gift Hampers" />
+          </div>
+          <h5 class="category-title">Gift Hampers</h5>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
